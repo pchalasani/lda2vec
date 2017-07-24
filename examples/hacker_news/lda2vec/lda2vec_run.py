@@ -18,8 +18,8 @@ from lda2vec import prepare_topics, print_top_words_per_topic
 from lda2vec_model import LDA2Vec
 
 gpu_id = int(os.getenv('CUDA_GPU', 0))
-cuda.get_device(gpu_id).use()
-print "Using GPU " + str(gpu_id)
+#cuda.get_device(gpu_id).use()
+#print "Using GPU " + str(gpu_id)
 
 # You must run preprocess.py before this data becomes available
 vocab = pickle.load(open('../data/vocab', 'r'))

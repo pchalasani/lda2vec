@@ -45,4 +45,4 @@ def test_print_top_words_per_topic():
     msgs = topics.print_top_words_per_topic(data, do_print=False)
     assert len(msgs) == 2
     for msg in msgs:
-        assert len(msg.split(' ')) == 3
+        assert len(msg) == 3
